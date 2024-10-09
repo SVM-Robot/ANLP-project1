@@ -1,14 +1,22 @@
 # Probing a Chess-LLM: Exploring what happens inside a Chess-Playing Language Model
 
-Silvano Vento Maddonni - 247370 - silvano.maddonni@studenti.unitn.it
-
 ## About the project
-This is the project for the ANLP course.
+In this project we test how a LLM performs in computer chess, an area that doesn’t directly belong to language, and explore and how it is internally reasoning.
 
-In this project we test how a LLM performs in computer chess, an area that doesn’t directly belong to language, and explore and try to understand how it is internally reasoning.
+The project is composed of three parts. 
 
-The project is composed of three parts. In part one, after handling the conversion and tokenization of the data, the model is set up to be able to predict the next move and a probing is conducted on its ability to keep predictions inside legal moves. In the second part, the focus is shifted towards probing the model by analyzing different attention heatmaps of the layers and heads. In the last part, a
-dedicated probing classifier is trained on top of the model to check the ability of the model to have an internal understanding of the position of the pieces.
+- **Part one:** after handling the conversion and tokenization of the data, the model is set up to be able to predict the next move and a probing is conducted on its ability to keep predictions inside legal moves. 
+
+
+    <img src="img/1tok.jpg" alt="Description" style="height: auto; width:600px;">
+
+- **Part two:** the focus is shifted towards probing the model by analyzing different attention heatmaps of the layers and heads. 
+
+    <img src="img/img2.png" alt="Description" style="height: auto; width:600px;">
+    <img src="img/img3.png" alt="Description" style="height: auto; width:600px;">
+- **Part three:** a dedicated probing classifier is trained on top of the model to check the ability of the model to have an internal understanding of the position of the pieces.
+
+    <img src="img/img5.png" alt="Description" style="height: auto; width:600px;">
 
 
 ## Files
